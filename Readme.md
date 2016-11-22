@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitry Umbras](https://up.htmlacademy.ru/adaptive/9/user/231933).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://htmlacademy.ru/profile/id29002).
 
 ---
 
