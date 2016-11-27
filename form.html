@@ -28,68 +28,44 @@
       <form class="order-form" action="/echo">
         <fieldset>
           <legend>Тип</legend>
-          <ul>
+          <ul class="order-form__radio-list">
             <li class="order-form__radio-item">
-              <label class="order-form__radio-label">
-                <input type="radio" name="radio" value="type1" checked>
-                <span class="order-form__radio-indicator"></span>
-                Аксессуар для интерьера
-              </label>
+              <input type="radio" name="radio" id="radio1" value="radio1" checked>
+              <label for="radio1">Аксессуар для интерьера</label>
             </li>
             <li class="order-form__radio-item">
-              <label class="order-form__radio-label">
-                <input type="radio" name="radio" value="type2">
-                <span class="order-form__radio-indicator"></span>
-                Детская игрушка
-              </label>
+              <input type="radio" name="radio" id="radio2" value="radio2">
+              <label for="radio2">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset>
           <legend>Цвет</legend>
-          <ul>
+          <ul class="order-form__checkbox-list">
             <li class="order-form__checkbox-item">
-              <label class="order-form__checkbox-label">
-                <input type="checkbox" name="check1" checked>
-                <span class="order-form__checkbox-indicator"></span>
-                Белый
-              </label>
+              <input type="checkbox" name="check1" id="check1" checked>
+              <label for="check1">Белый</label>
             </li>
             <li class="order-form__checkbox-item">
-              <label class="order-form__checkbox-label">
-                <input type="checkbox" name="check2" checked>
-                <span class="order-form__checkbox-indicator"></span>
-                Серый
-              </label>
+              <input type="checkbox" name="check2" id="check2" checked>
+              <label for="check2">Серый</label>
             </li>
             <li class="order-form__checkbox-item">
-              <label class="order-form__checkbox-label">
-                <input type="checkbox" name="check3">
-                <span class="order-form__checkbox-indicator"></span>
-                &laquo;Тиффани&raquo;
-              </label>
+              <input type="checkbox" name="check3" id="check3">
+              <label for="check3">&laquo;Тиффани&raquo;</label>
             </li>
             <li class="order-form__checkbox-item">
-              <label class="order-form__checkbox-label">
-                <input type="checkbox" name="check4">
-                <span class="order-form__checkbox-indicator"></span>
-                Черный
-              </label>
+              <input type="checkbox" name="check4" id="check4">
+              <label for="check4">Черный</label>
             </li>
             <li class="order-form__checkbox-item">
-              <label class="order-form__checkbox-label">
-                <input type="checkbox" name="check5">
-                <span class="order-form__checkbox-indicator"></span>
-                Розовый
-              </label>
+              <input type="checkbox" name="check5" id="check5">
+              <label for="check5">Розовый</label>
             </li>
             <li class="order-form__checkbox-item">
-              <label class="order-form__checkbox-label">
-                <input type="checkbox" name="check6">
-                <span class="order-form__checkbox-indicator"></span>
-                Оранжевый
-              </label>
+              <input type="checkbox" name="check6" id="check6">
+              <label for="check6">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
