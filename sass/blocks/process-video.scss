@@ -1,0 +1,34 @@
+.process-video {
+
+}
+
+.process-video__link {
+  position: relative;
+}
+
+.process-video__image {
+  width: 260px;
+  height: 150px;
+}
+
+.process-video__control {
+  @include zero-centered;
+  display: block;
+  width: 102px;
+  height: 78px;
+  background:transparent url("../../img/icon-play.svg") center no-repeat;
+  transition: 0.3s;
+}
+
+.process-video__link:hover {
+  .process-video__control {
+    transform: scale(1.2);
+  }
+}
+
+.process-video__link:active {
+  .process-video__control {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}

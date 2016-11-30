@@ -1,0 +1,67 @@
+.contacts {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background: $bg-white url("../img/zigzag.png") 0 0 repeat-x;
+}
+
+.contacts__inner {
+  @include container;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts-table {
+  width: 100%;
+  margin-bottom: 6px;
+  font-family: $font-stack;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-dark;
+
+  td {
+    vertical-align: top;
+    padding-bottom: 28px;
+  }
+
+  a {
+    font-family: $font-stack;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $text-dark;
+    border-bottom: 1px solid $bg-green;
+
+    &:hover {
+      color: $bg-green
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.contacts-table__name {
+  width: 77px;
+}
+
+.contacts__map {
+  margin-bottom: 32px;
+  text-align: center;
+
+  img {
+    width: 320px;
+    height: 460px;
+  }
+}
+
+.contacts__write {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 0 auto;
+}

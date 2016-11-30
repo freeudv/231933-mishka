@@ -1,0 +1,61 @@
+.product-of-week {
+  padding-top: 8px;
+  padding-bottom: 35px;
+}
+
+.product-of-week__inner {
+  @include container;
+}
+
+.product-of-week__title {
+  margin-bottom: 6px;
+}
+
+.product-of-week__subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: $text-green;
+  text-transform: uppercase;
+}
+
+.product-of-week__text {
+  margin-bottom: 15px;
+}
+
+.product-of-week__table {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-dark;
+
+  td {
+    padding-bottom: 9px;
+    padding-top: 9px;
+    border-bottom: 1px solid $border-gray;
+  }
+}
+
+.product-of-week__attribute {
+  width: 100px;
+}
+
+.product-of-week__image {
+  margin-bottom: 18px;
+
+  img {
+    width: 260px;
+    height: 315px;
+  }
+}
+
+.product-of-week__price {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $text-dark;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+.about {
+  padding-top: 14px;
+  background: $bg-white url("../img/zigzag.png") 0 0 repeat-x;
+}
+
+.about__inner {
+  @include container;
+}
+
+.about__title {
+  margin-bottom: 32px;
+}
+
+.about__item {
+  position: relative;
+  width: 250px;
+  padding-top: 49px;
+  padding-bottom: 32px;
+  font-family: $font-stack;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $text-black;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@for $i from 1 through 6 {
+  .about__item--feature#{$i} {
+    &:before {
+      background-image: url("../img/icon-feature-#{$i}.svg");
+    }
+
+}
+
+}
+

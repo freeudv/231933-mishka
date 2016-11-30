@@ -1,0 +1,45 @@
+.process {
+  padding-bottom: 55px;
+}
+
+.process__inner {
+  @include container;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+}
+
+.process__title {
+  position: relative;
+  padding-left: 90px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    display: block;
+    width: 32px;
+    height: 22px;
+    background:transparent url("../img/icon-video.svg") center no-repeat;
+  }
+}
+
+.process__text {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  padding: 0 34px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-dark;
+}
+
+.process__order {
+  margin: 0 34px;
+}
