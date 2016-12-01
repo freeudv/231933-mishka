@@ -1,0 +1,176 @@
+.order-form {
+  fieldset {
+    position: relative;
+    padding: 0;
+    padding-top: 42px;
+    padding-bottom: 15px;
+    border: none;
+    border-top: 1px solid $bg-green;
+  }
+
+  legend {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    padding-right: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    color: $text-green;
+    background-color: $bg-white;
+    text-transform: uppercase;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $text-black;
+  }
+}
+
+.order-form__radio-item,
+.order-form__checkbox-item {
+  label {
+    position: relative;
+    display: block;
+    padding-left: 62px;
+  }
+}
+
+.order-form__radio-item {
+  margin-bottom: 30px;
+
+  label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      display: block;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $text-dark;
+      border-radius: 50%;
+    }
+  }
+
+  label:hover {
+    &::before {
+      border: 2px solid $bg-green;
+    }
+  }
+
+  label:active {
+    &::before {
+      border: 2px solid rgba($text-dark, 0.3);
+    }
+  }
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: $bg-green;
+  border-radius: 50%;
+}
+
+.order-form__checkbox-item {
+  margin-bottom: 43px;
+
+  label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      display: block;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $text-dark;
+    }
+  }
+
+  label:hover {
+    &::before {
+      border: 2px solid $bg-green;
+    }
+  }
+
+  label:active {
+    &::before {
+      border: 2px solid rgba($text-dark, 0.3);
+    }
+  }
+}
+
+input[type="checkbox"]:checked + label::before {
+  background:transparent url("../img/icon-tick.svg") center no-repeat;
+  background-size: 70%;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba($text-dark, 0.3);
+  border: 0;
+  border-bottom: 2px solid $text-black;
+  outline: 0;
+}
+
+.order-form__phone input,
+.order-form__email input{
+  box-sizing: border-box;
+  padding-right: 35px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.order-form__phone input{
+  background-image: url("../../img/icon-phone.svg");
+}
+
+.order-form__email input{
+  background-image: url("../../img/icon-mail.svg");
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba($text-dark, 0.3);
+  border: 2px solid $text-black;
+}
+
+.order-form__required {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $text-dark;
+}
+
+.order-form__submit {
+  width: 100%;
+}

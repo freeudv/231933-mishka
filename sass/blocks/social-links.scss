@@ -1,0 +1,31 @@
+
+.social-links {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-size: 0;
+}
+
+.social-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link--in {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.social-link--fb {
+  margin: 0 30px;
+  background-image: url("../img/icon-fb.svg");
+}
+
+.social-link--tw {
+  background-image: url("../img/icon-twitter.svg");
+}

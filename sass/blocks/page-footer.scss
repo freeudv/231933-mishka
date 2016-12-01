@@ -1,0 +1,34 @@
+.page-footer {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  background-color: $bg-gray;
+}
+
+.page-footer__inner {
+  @include container;
+}
+
+.page-footer__copyright {
+  padding-top: 10px;
+  font-size: 19px;
+  font-weight: 700;
+  color: $text-black;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  background-color: inherit;
+  border: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+  }
+}
