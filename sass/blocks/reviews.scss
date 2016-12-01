@@ -15,7 +15,6 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  font-family: $font-stack;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
@@ -52,11 +51,12 @@
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid $border-gray;
-  outline: none;
+  outline: 0;
+  cursor: pointer;
 }
 
 .reviews__btn--prev {
-  border-right: none;
+  border-right: 0;
   background-image: url("../../img/icon-left-arrow.svg");
 }
 

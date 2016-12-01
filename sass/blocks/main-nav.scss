@@ -1,7 +1,6 @@
 
 .main-nav {
   position: relative;
-
 }
 
 .main-nav__toggle {
@@ -12,11 +11,10 @@
   width: 20px;
   height: 14px;
   font-size: 0;
-  border: none;
-  outline: none;
+  border: 0;
+  outline: 0;
   background: transparent url("../img/icon-menu-open.svg") 0 0 no-repeat;
   cursor: pointer;
-
 }
 
 .main-nav__list {
@@ -43,7 +41,6 @@
       color: rgba($text-black, 0.3);
     }
   }
-
 }
 
 .main-nav__item--search,

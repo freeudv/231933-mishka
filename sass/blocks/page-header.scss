@@ -46,7 +46,7 @@
   text-transform: none;
   text-align: left;
   color: $text-white;
-  border: none;
+  border: 0;
 
   &::after {
     content: "";

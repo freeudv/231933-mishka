@@ -129,9 +129,9 @@ input[type="email"] {
   font-weight: 400;
   line-height: 18px;
   color: rgba($text-dark, 0.3);
-  border: none;
+  border: 0;
   border-bottom: 2px solid $text-black;
-  outline: none;
+  outline: 0;
 }
 
 .order-form__phone input,

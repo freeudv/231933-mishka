@@ -10,6 +10,15 @@ body {
 }
 
 
+a {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  background-color: $bg-white;
+}
+
 @mixin headers {
   font-weight: 700;
   color: $text-black;
