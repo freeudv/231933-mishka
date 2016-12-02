@@ -1,4 +1,4 @@
-.process-video__link {
+.process-video {
   position: relative;
 }
 
@@ -16,13 +16,13 @@
   transition: 0.3s;
 }
 
-.process-video__link:hover {
+.process-video:hover {
   .process-video__control {
     transform: scale(1.2);
   }
 }
 
-.process-video__link:active {
+.process-video:active {
   .process-video__control {
     transform: scale(0.8);
     opacity: 0.3;

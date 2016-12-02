@@ -9,7 +9,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 10px;
+  padding-top: 14px;
   font-size: 19px;
   font-weight: 700;
   color: $text-black;
@@ -22,13 +22,12 @@
   vertical-align: middle;
   width: 40px;
   height: auto;
-  vertical-align: middle;
+  margin-left: 20px;
   background-color: inherit;
   border: 0;
 
   img {
     width: 100%;
     height: auto;
-    margin-left: 20px;
   }
 }

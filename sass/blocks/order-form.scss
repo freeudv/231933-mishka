@@ -4,15 +4,16 @@
     padding: 0;
     padding-top: 42px;
     padding-bottom: 15px;
+    margin: 0;
     border: none;
     border-top: 1px solid $bg-green;
   }
 
   legend {
     position: absolute;
-    top: -8px;
+    top: -9px;
     left: 0;
-    padding-right: 25px;
+    padding-right: 20px;
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
@@ -39,7 +40,7 @@
   label {
     position: relative;
     display: block;
-    padding-left: 62px;
+    padding-left: 60px;
   }
 }
 
@@ -92,7 +93,7 @@ input[type="radio"]:checked + label::after {
     &::before {
       content: "";
       position: absolute;
-      top: -12px;
+      top: -10px;
       left: 0;
       display: block;
       width: 35px;
@@ -120,7 +121,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="tel"] {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -132,6 +134,15 @@ input[type="email"] {
   border: 0;
   border-bottom: 2px solid $text-black;
   outline: 0;
+
+  &:hover {
+    border-bottom: 2px solid $bg-green;
+  }
+
+  &:focus {
+    color: $text-dark;
+    border-bottom: 2px solid $bg-green;
+  }
 }
 
 .order-form__phone input,
@@ -160,6 +171,17 @@ textarea {
   line-height: 18px;
   color: rgba($text-dark, 0.3);
   border: 2px solid $text-black;
+  outline: 0;
+  resize: none;
+
+  &:hover {
+    border: 2px solid $bg-green;
+  }
+
+  &:focus {
+    color: $text-dark;
+    border: 2px solid $bg-green;
+  }
 }
 
 .order-form__required {
