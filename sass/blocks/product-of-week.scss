@@ -58,3 +58,107 @@
   color: $text-dark;
   text-align: center;
 }
+
+@media #{$tablet-widths} {
+
+  .product-of-week {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product-of-week__inner {
+    position: relative;
+  }
+  .product-of-week__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .product-of-week__title {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-of-week__subtitle {
+    width: 80px;
+    margin: 0;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .product-of-week__text {
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-of-week__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 334px;
+    height: 405px;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .product-of-week__text,
+  .product-of-week__table,
+  .product-of-week__price,
+  .product-of-week__btn {
+    width: 290px;
+  }
+
+  .product-of-week__table {
+    margin-bottom: 50px;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .product-of-week {
+    padding-top: 70px;
+  }
+
+  .product-of-week__title-wrapper {
+    margin-top: 70px;
+  }
+
+  .product-of-week__title {
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product-of-week__subtitle {
+    margin: 0;
+    margin: 0 48px;
+  }
+
+  .product-of-week__text {
+    margin-bottom: 60px;
+  }
+  .product-of-week__image {
+    width: 525px;
+    height: 635px;
+    z-index: -1;
+  }
+
+  .product-of-week__text,
+  .product-of-week__table,
+  .product-of-week__price,
+  .product-of-week__btn {
+    margin-left: 175px;
+  }
+
+  .product-of-week__table {
+    margin-bottom: 100px;
+  }
+}

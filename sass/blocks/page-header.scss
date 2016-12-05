@@ -1,7 +1,7 @@
 
 .page-header {
   text-align: center;
-  background: $bg-white url("../img/hero-mobile@1x.jpg") no-repeat;
+  background: $ph-bg url("../img/hero-mobile@1x.jpg") no-repeat;
   background-position: center top 60px;
 }
 
@@ -11,20 +11,6 @@
 
   .page-header__title {
     margin-bottom: 75px;
-  }
-}
-
-.page-header__logo {
-  min-height: 78px;
-  text-align: center;
-  background-color: $bg-white;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-
-  img {
-    width: 86px;
-    height: 35px;
-    margin-top: 21px;
   }
 }
 
@@ -76,5 +62,66 @@
 
   &::after {
     background-image: url("../img/icon-toy.svg");
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .page-header {
+
+  }
+
+  .page-header--internal {
+    background: $bg-gray url("../img/wave-tablet.png") bottom left repeat-x;
+  }
+
+  .page-header__title {
+    width: 500px;
+    margin-bottom: 370px;
+    font-size: 47px;
+    line-height: 50px;
+  }
+
+  .page-header__btn-wrapper {
+    position: relative;
+    @include container
+    font-size: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 10px;
+      background: transparent url("../img/wave-tablet.png") left top repeat-x;
+    }
+  }
+
+  .page-header__btn {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-header--internal {
+    background: $bg-gray url("../img/wave-desktop.png") bottom left repeat-x;
+  }
+
+  .page-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-header__btn-wrapper {
+    &::after {
+      height: 15px;
+      background: transparent url("../img/wave-desktop.png") left top repeat-x;
+    }
   }
 }
