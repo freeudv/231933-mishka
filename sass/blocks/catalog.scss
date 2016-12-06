@@ -5,3 +5,19 @@
 .catalog__inner {
   @include container;
 }
+
+@media #{$tablet-widths} {
+  .catalog {
+    padding-top: 80px;
+  }
+}
+
+@media #{$desktop-widths} {
+.catalog {
+  padding-bottom: 50px;
+}
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+}
+}

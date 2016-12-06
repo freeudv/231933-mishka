@@ -8,6 +8,9 @@ $text-white: #ffffff;
 $text-green: #63d1bb;
 
 $border-gray: #ececec;
+$ph-bg: #f9f9f9;
 
 $font-stack: "Open Sans", "Arial", sans-serif;
-$arial: "Arial", "Helvetica", sans-serif;
+
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1150px);

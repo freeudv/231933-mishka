@@ -2,22 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <div class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Вязание на заказ">
-      </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Окрыть меню</button>
           <ul class="main-nav__list">
+            <li class="main-nav__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Вязание на заказ"></li>
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на&nbsp;заказ</a></li>
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по&nbsp;сайту</a></li>
             <li class="main-nav__item  main-nav__item--card"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item"><a href="#">Распродажа</a></li>
+            <li class="main-nav__item">Бесплатная доставка по России</li>
           </ul>
       </nav>
       <h1 class="page-header__title">Милые штуки ручной<br> работы для дома</h1>
@@ -31,8 +33,10 @@
 
       <section class="product-of-week">
         <div class="product-of-week__inner">
-          <h2 class="product-of-week__title">Вязаные корзинки</h2>
-          <h3 class="product-of-week__subtitle">Товар недели</h3>
+          <div class="product-of-week__title-wrapper">
+            <h2 class="product-of-week__title">Вязаные корзинки</h2>
+            <h3 class="product-of-week__subtitle">Товар недели</h3>
+          </div>
           <p class="product-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.</p>
           <table class="product-of-week__table">
             <tr>
@@ -79,8 +83,10 @@
               <cite class="reviews__auhor-name">Анастасия Красильникова<i> @misssssiskras</i></cite>
             </blockquote>
           </div>
-          <button class="reviews__btn  reviews__btn--prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__btn  reviews__btn--next" type="button">Следующий отзыв</button>
+          <div class="reviews__btn-wrapper">
+            <button class="reviews__btn  reviews__btn--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__btn  reviews__btn--next" type="button">Следующий отзыв</button>
+          </div>
           <a class="reviews__write  btn" href="#">Написать</a>
         </div>
       </section>
@@ -104,20 +110,25 @@
         <div class="contacts__map">
           <img src="img/map-mobile@1x.jpg" width="320" height="460" alt="Карта проезда">
         </div>
-        <a class="contacts__write  btn" href="#">Напишите нам</a>
+        <div class="contacts__inner">
+          <a class="contacts__write  btn" href="#">Напишите нам</a>
+        </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__inner">
+        <div class="page-footer__logo">
+            <img src="img/logo-mobile.svg" width="102" height="34" alt="Вязание на заказ">
+        </div>
         <div class="page-footer__social  social-links">
           <a class="social-link  social-link--in" href="https://instagram.com">Мы в Инстаграмме</a>
           <a class="social-link  social-link--fb" href="https://facebook.com">Мы в Фейсбуке</a>
           <a class="social-link  social-link--tw" href="https://twitter.com">Мы в Твиттере</a>
         </div>
         <p class="page-footer__copyright">
-          Разработанно
+          Разработано
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
             <img src="img/htmlacademy.svg" alt="HTML Academy">
           </a>

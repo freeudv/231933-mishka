@@ -1,6 +1,6 @@
 .about {
-  padding-top: 14px;
-  background: $bg-white url("../img/zigzag.png") 0 0 repeat-x;
+  padding-top: 13px;
+  background: $bg-white url("../img/zigzag-mobile.png") 0 0 repeat-x;
 }
 
 .about__inner {
@@ -8,14 +8,14 @@
 }
 
 .about__title {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .about__item {
   position: relative;
   width: 250px;
-  padding-top: 49px;
-  padding-bottom: 32px;
+  padding-top: 50px;
+  padding-bottom: 31px;
   font-size: 17px;
   font-weight: 700;
   line-height: 21px;
@@ -40,5 +40,63 @@
     &:before {
       background-image: url("../img/icon-feature-#{$i}.svg");
     }
+  }
+}
+
+@media #{$tablet-widths} {
+  .about {
+    background: $bg-white url("../img/zigzag-tablet.png") 0 0 repeat-x;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 70px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about__item--feature1 {
+    order: 1;
+  }
+
+  .about__item--feature2 {
+    order: 3;
+  }
+
+  .about__item--feature3 {
+    order: 5;
+  }
+
+  .about__item--feature4 {
+    order: 2;
+  }
+
+  .about__item--feature5 {
+    order: 4;
+  }
+
+  .about__item--feature6 {
+    order: 6;
+  }
+}
+
+@media #{$desktop-widths} {
+  .about {
+    background: $bg-white url("../img/zigzag-desktop.png") 0 0 repeat-x;
+  }
+
+  .about__inner {
+    width: 700px;
   }
 }

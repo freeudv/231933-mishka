@@ -8,6 +8,7 @@
 
   td {
     vertical-align: top;
+    padding: 0;
     padding-bottom: 28px;
   }
 
@@ -30,4 +31,36 @@
 
 .contacts-table__name {
   width: 77px;
+}
+
+@media #{$tablet-widths} {
+  .contacts-table {
+
+    tbody {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    tr {
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    td {
+      font-size: 17px;
+      text-align: left;
+    }
+
+    a {
+      font-size: 17px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .contacts-table {
+    tbody {
+      display: table-row-group;
+    }
+  }
 }
