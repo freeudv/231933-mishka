@@ -26,7 +26,6 @@
 }
 
 @media #{$tablet-widths} {
-
   .contacts {
     background: $bg-white url("../img/zigzag-tablet.png") 0 0 repeat-x;
   }
@@ -57,7 +56,6 @@
 }
 
 @media #{$desktop-widths} {
-
   .contacts {
     position: relative;
     padding-top: 170px;
