@@ -18,8 +18,8 @@
 
 .main-nav__logo {
   background-color: $bg-white;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  border-top: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
 
   img {
     display: block;
@@ -67,7 +67,7 @@
 .main-nav__item--card a {
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -83,13 +83,13 @@
 
 .main-nav__item--search a {
 
-  &:before {
+  &::before {
     background-image: url("../img/icon-search.svg");
   }
 }
 
 .main-nav__item--card a {
-  &:before {
+  &::before {
     background-image: url("../img/icon-cart.svg");
   }
 }
@@ -101,7 +101,7 @@
     }
 
   .main-nav__list {
-    @include container
+    @include container;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -245,6 +245,7 @@
       background-color: transparent;
     }
   }
+
   .main-nav__item:last-child {
     margin-right: 0;
   }

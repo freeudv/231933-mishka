@@ -10,7 +10,10 @@
   transition: 0.3s;
 }
 
-.process-video:hover {
+.process-video:hover,
+.process-video:focus {
+  cursor: pointer;
+
   .process-video__control {
     transform: scale(1.2);
   }
@@ -24,6 +27,7 @@
 }
 
 @media #{$tablet-widths} {
+
   .process-video {
     height: 456px;
 
@@ -35,6 +39,7 @@
 }
 
 @media #{$desktop-widths} {
+
   .process-video {
     float: left;
     width: 680px;

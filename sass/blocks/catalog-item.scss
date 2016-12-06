@@ -51,29 +51,26 @@
 }
 
 .catalog-item__price-wrapper {
-  position: relative;
-  padding: 20px 30px 27px;
+  @include clearfix;
+  border-top: 1px solid $border-gray;
+  margin: 20px 30px 27px;
+  padding-top: 15px;
 }
 
 .catalog-item__price {
-  display: block;
-  padding-top: 15px;
+  float: left;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
   color: $text-black;
-  border-top: 1px solid $border-gray;
 }
 
 .catalog-item__price-link {
-  position: absolute;
-  top: 55%;
-  right: 25px;
+  float: right;
   width: 21px;
   height: 19px;
   font-size: 0;
   background:transparent url("../img/icon-cart.svg") center no-repeat;
-  transform: translate(0, -50%);
 }
 
 @media #{$tablet-widths} {
@@ -118,6 +115,7 @@
 }
 
 @media #{$desktop-widths} {
+
   .catalog-item {
     flex-direction: column;
     margin-bottom: 0;
