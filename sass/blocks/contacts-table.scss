@@ -7,12 +7,14 @@
   color: $text-dark;
 
   td {
-    vertical-align: top;
     padding: 0;
     padding-bottom: 28px;
+    text-align: left;
+    vertical-align: top;
   }
 
   a {
+    padding-bottom: 3px;
     font-size: 15px;
     font-weight: 400;
     line-height: 30px;
@@ -35,6 +37,7 @@
 
 @media #{$tablet-widths} {
   .contacts-table {
+    margin-bottom: 25px;
 
     tbody {
       display: flex;
@@ -59,6 +62,8 @@
 
 @media #{$desktop-widths} {
   .contacts-table {
+    margin-bottom: 50px;
+
     tbody {
       display: table-row-group;
     }

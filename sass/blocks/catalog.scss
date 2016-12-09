@@ -8,16 +8,17 @@
 
 @media #{$tablet-widths} {
   .catalog {
-    padding-top: 80px;
+    padding-top: 79px;
   }
 }
 
 @media #{$desktop-widths} {
-.catalog {
-  padding-bottom: 50px;
-}
-.catalog__list {
-  display: flex;
-  justify-content: space-between;
-}
+  .catalog {
+    padding-top: 128px;
+    padding-bottom: 57px;
+  }
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

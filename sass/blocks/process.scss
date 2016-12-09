@@ -1,21 +1,43 @@
 .process {
+  padding-top: 2px;
   padding-bottom: 59px;
 }
 
 .process__inner {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   @include container;
-  padding-top: 8px;
-  padding-bottom: 30px;
+}
+
+.process__text-wrapper {
+  padding-top: 23px;
+  padding-bottom: 32px;
   border: 1px solid $border-gray;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba($text-black, 0.1);
+
+    .process__order {
+      color: $text-white;
+      background-color: $text-dark;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($text-black, 0.1);
+
+    .process__order {
+      color: rgba($text-white, 0.3);
+    }
+  }
 }
 
 .process__title {
-  order: -1;
   position: relative;
+  margin-top: 0;
+  margin-bottom: 201px;
   padding-left: 91px;
-  padding-bottom: 9px;
+
   font-size: 17px;
   line-height: 24px;
   color: $text-black;
@@ -33,9 +55,7 @@
 }
 
 .process__text {
-  margin-top: 22px;
-  margin-bottom: 25px;
-  padding: 0 34px;
+  margin: 0 34px 25px;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -47,54 +67,81 @@
 }
 
 @media #{$tablet-widths} {
+  .process {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+  .process__inner {
+    padding-top: 456px;
+  }
+
+  .process__text-wrapper {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
   .process__title {
-    order: 0;
+    margin-top: 36px;
+    margin-bottom: 32px;
+    padding-left: 105px;
     font-size: 20px;
 
     &::before {
       top: 0;
+      left: 43px;
     }
   }
 
   .process__text {
+    margin: 0 40px;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .process__order {
-    margin: 0 44px;
+    margin: 0 42px;
   }
 }
 
 @media #{$desktop-widths} {
+  .process {
+    padding-bottom: 105px;
+  }
+
   .process__inner {
-    display: block;
-    padding: 0;
     @include clearfix;
+    padding-top: 0;
+  }
+
+  .process__text-wrapper {
+    float: right;
+    box-sizing: border-box;
+    width: 367px;
+    padding-left: 79px;
+    padding-right: 56px;
+    padding-bottom: 60px;
+    border-left: 0;
   }
 
   .process__title {
-    margin-left: 760px;
-    margin-right: 100px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding-top: 50px;
+    margin-bottom: 33px;
+    padding-top: 59px;
     padding-left: 0;
 
     &::before {
+      top: 9px;
       left: 0;
     }
   }
 
   .process__text {
-    margin-left: 760px;
-    margin-right: 50px;
-    margin-bottom: 40px;
-    padding: 0;
+    margin: 0;
+    margin-bottom: 46px;
   }
 
     .process__order {
-      margin-left: 760px;
-      margin-right: 56px;
+      margin: 0;
   }
 }

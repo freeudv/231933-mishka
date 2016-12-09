@@ -10,9 +10,10 @@
 }
 
 .contacts__title {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 30px;
+  text-align: left;
 }
 
 .contacts__map {
@@ -27,14 +28,16 @@
 
 @media #{$tablet-widths} {
   .contacts {
+    padding-top: 40px;
+    padding-bottom: 56px;
     background: $bg-white url("../img/zigzag-tablet.png") 0 0 repeat-x;
   }
 
   .contacts__title {
     position: relative;
+    margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
-    text-align: left;
 
     &::before {
       content: "";
@@ -45,6 +48,10 @@
       height: 81px;
       background:transparent url("../img/icon-flag.svg") 0 0 no-repeat;
     }
+  }
+
+  .contacts__map {
+    margin-bottom: 45px;
   }
 
   .contacts__write {
@@ -58,7 +65,8 @@
 @media #{$desktop-widths} {
   .contacts {
     position: relative;
-    padding-top: 170px;
+    padding-top: 120px;
+    padding-bottom: 104px;
     text-align: left;
     background: $bg-white url("../img/zigzag-desktop.png") 0 0 repeat-x;
   }
@@ -69,19 +77,19 @@
   }
 
   .contacts__title {
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
-    text-align: left;
 
     &::before {
-      top: -15px;
-      left: -100px;
+      top: -9px;
+      left: -110px;
     }
   }
 
   .contacts__map {
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     right: 50px;
   }
 

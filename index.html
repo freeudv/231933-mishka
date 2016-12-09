@@ -12,14 +12,14 @@
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Окрыть меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Вязание на заказ"></li>
+            <li class="main-nav__item  main-nav__item--logo"><a><img src="img/logo-mobile.svg" width="86" height="35" alt="Вязание на заказ"></a></li>
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на&nbsp;заказ</a></li>
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по&nbsp;сайту</a></li>
-            <li class="main-nav__item  main-nav__item--card"><a href="#">Корзина: пока пуста</a></li>
-            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-            <li class="main-nav__item"><a href="#">Распродажа</a></li>
-            <li class="main-nav__item">Бесплатная доставка по России</li>
+            <li class="main-nav__item  main-nav__item--card"><a href="#">Корзина: <b>пока пуста</b></a></li>
+            <li class="main-nav__item  main-nav__item--hidden"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item  main-nav__item--hidden"><a href="#">Распродажа</a></li>
+            <li class="main-nav__item  main-nav__item--deliver">Бесплатная доставка по России</li>
           </ul>
       </nav>
       <h1 class="page-header__title">Милые штуки ручной<br> работы для дома</h1>
@@ -52,9 +52,9 @@
               <td class="product-of-week__value">15&nbsp;см</td>
             </tr>
           </table>
-          <div class="product-of-week__image">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели">
-          </div>
+          <!-- <div class="product-of-week__image"> -->
+            <img class="product-of-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели">
+<!--           </div> -->
           <span class="product-of-week__price">Цена: 990&nbsp;руб.</span>
           <a class="product-of-week__btn  btn" href="#">Заказать</a>
         </div>
@@ -64,12 +64,12 @@
         <div class="about__inner">
           <h2 class="about__title">Коротко о&nbsp;нас:</h2>
           <ul class="about__list">
-            <li class="about__item  about__item--feature1">Экологически чистые материалы</li>
+            <li class="about__item  about__item--feature1">Экологически <br>чистые материалы</li>
             <li class="about__item  about__item--feature2">Скандинавский стиль по&nbsp;российской цене</li>
             <li class="about__item  about__item--feature3">Увеличивает лайки на&nbsp;фотографиях</li>
-            <li class="about__item  about__item--feature4">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
+            <li class="about__item  about__item--feature4">Связано вручную с любовью и умилением</li>
             <li class="about__item  about__item--feature5">Поддержка отечественного производителя</li>
-            <li class="about__item  about__item--feature6">Поставляется в&nbsp;подарочной упаковке</li>
+            <li class="about__item  about__item--feature6">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -79,13 +79,13 @@
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list">
             <blockquote class="reviews__item  slider__item">
-              <p>Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
+              <p>Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__auhor-name">Анастасия Красильникова<i> @misssssiskras</i></cite>
             </blockquote>
           </div>
           <div class="reviews__btn-wrapper">
-            <button class="reviews__btn  reviews__btn--prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__btn  reviews__btn--next" type="button">Следующий отзыв</button>
+            <button class="reviews__btn  reviews__btn--prev" type="button"><span class="reviews__btn-arrow">Предыдущий отзыв</span></button>
+            <button class="reviews__btn  reviews__btn--next" type="button"><span class="reviews__btn-arrow">Следующий отзыв</span></button>
           </div>
           <a class="reviews__write  btn" href="#">Написать</a>
         </div>
@@ -135,6 +135,23 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
   </body>
 </html>

@@ -12,14 +12,14 @@
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Окрыть меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__logo"><a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Вязание на заказ"></a></li>
+            <li class="main-nav__item  main-nav__item--logo"><a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Вязание на заказ"></a></li>
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на&nbsp;заказ</a></li>
+            <li class="main-nav__item"><a>Вязание на&nbsp;заказ</a></li>
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по&nbsp;сайту</a></li>
-            <li class="main-nav__item  main-nav__item--card"><a href="#">Корзина: пока пуста</a></li>
-            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-            <li class="main-nav__item"><a href="#">Распродажа</a></li>
-            <li class="main-nav__item">Бесплатная доставка по России</li>
+            <li class="main-nav__item  main-nav__item--card"><a href="#">Корзина: <b>пока пуста</b></a></li>
+            <li class="main-nav__item  main-nav__item--hidden"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item  main-nav__item--hidden"><a href="#">Распродажа</a></li>
+            <li class="main-nav__item  main-nav__item--deliver">Бесплатная доставка по России</li>
           </ul>
       </nav>
       <h1 class="page-header__title">Вязание на&nbsp;заказ</h1>
@@ -33,14 +33,14 @@
       <form class="order-form" action="/echo">
 
         <div class="order-form__wrapper">
-          <fieldset>
+          <fieldset class="order-form__type">
             <legend>Тип</legend>
-            <ul class="order-form__radio-list">
-              <li class="order-form__radio-item">
+            <ul class="order-form__type-list">
+              <li class="order-form__type-item">
                 <input type="radio" name="radio" id="radio1" value="radio1" checked>
                 <label for="radio1">Аксессуар для интерьера</label>
               </li>
-              <li class="order-form__radio-item">
+              <li class="order-form__type-item">
                 <input type="radio" name="radio" id="radio2" value="radio2">
                 <label for="radio2">Детская игрушка</label>
               </li>
@@ -50,30 +50,30 @@
 
         <div class="order-form__bg">
           <div class="order-form__wrapper">
-          <fieldset>
+          <fieldset class="order-form__color">
             <legend>Цвет</legend>
-            <ul class="order-form__checkbox-list">
-              <li class="order-form__checkbox-item">
+            <ul class="order-form__color-list">
+              <li class="order-form__color-item">
                 <input type="checkbox" name="check1" id="check1" checked>
                 <label for="check1">Белый</label>
               </li>
-              <li class="order-form__checkbox-item">
+              <li class="order-form__color-item">
                 <input type="checkbox" name="check2" id="check2" checked>
                 <label for="check2">Серый</label>
               </li>
-              <li class="order-form__checkbox-item">
+              <li class="order-form__color-item">
                 <input type="checkbox" name="check3" id="check3">
                 <label for="check3">&laquo;Тиффани&raquo;</label>
               </li>
-              <li class="order-form__checkbox-item">
+              <li class="order-form__color-item">
                 <input type="checkbox" name="check4" id="check4">
                 <label for="check4">Черный</label>
               </li>
-              <li class="order-form__checkbox-item">
+              <li class="order-form__color-item">
                 <input type="checkbox" name="check5" id="check5">
                 <label for="check5">Розовый</label>
               </li>
-              <li class="order-form__checkbox-item">
+              <li class="order-form__color-item">
                 <input type="checkbox" name="check6" id="check6">
                 <label for="check6">Оранжевый</label>
               </li>
@@ -83,7 +83,7 @@
         </div>
 
         <div class="order-form__wrapper">
-        <fieldset  class="order-form__name">
+        <fieldset class="order-form__name">
           <legend>ФИО</legend>
             <div class="order-form__group">
               <label for="name">Имя:</label>
@@ -150,5 +150,23 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+
   </body>
 </html>
