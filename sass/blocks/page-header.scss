@@ -1,8 +1,21 @@
 
 .page-header {
+  position: relative;
+
   text-align: center;
   background: $ph-bg url("../img/hero-mobile@1x.jpg") no-repeat;
-  background-position: center top 60px;
+  background-position: center bottom 135px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 5px;
+      background-color: $bg-white;
+    }
 }
 
 .page-header--internal {
@@ -10,6 +23,7 @@
   background-image: none;
 
   .page-header__title {
+    margin-top: 71px;
     margin-bottom: 75px;
   }
 }
@@ -19,14 +33,14 @@
   vertical-align: top;
   width: 250px;
   margin-top: 70px;
-  margin-bottom: 122px;
+  margin-bottom: 112px;
   color: #010000;
 }
 
 .page-header__btn {
   position: relative;
   display: block;
-  padding: 26px 30px 29px;
+  padding: 26px 30px 35px 29px;
   font-size: 19px;
   line-height: 24px;
   text-transform: none;
@@ -39,11 +53,10 @@
     position: absolute;
     top: 50%;
     right: 26px;
-    display: block;
     width: 60px;
-    height: 60px;
+    height: 65px;
     background-color: transparent;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     transform: translate(0, -50%);
   }
@@ -51,50 +64,85 @@
 
 .page-header__btn--furniture {
   background-color: $text-green;
+  transform: translate(0, 10px);
 
   &::after {
     background-image: url("../img/icon-interior.svg");
   }
+
+  &:hover {
+    background-color: #59d5bc;
+    transform: translate(0, 5px);
+
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
 }
 
 .page-header__btn--toys {
+  z-index: 1;
   background-color: #56c3b2;
+  transform: translate(0, 5px);
 
   &::after {
+    background-position: center top;
     background-image: url("../img/icon-toy.svg");
+  }
+
+  &:hover {
+    background-color: #46c1ae;
+    transform: translate(0, 0);
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
   }
 }
 
 @media #{$tablet-widths} {
   .page-header {
+    padding-bottom: 5px;
 
-  }
-
-  .page-header--internal {
-    background: $bg-gray url("../img/wave-tablet.png") bottom left repeat-x;
-  }
-
-  .page-header__title {
-    width: 500px;
-    margin-bottom: 370px;
-    font-size: 47px;
-    line-height: 50px;
-  }
-
-  .page-header__btn-wrapper {
-    position: relative;
-    @include container
-    font-size: 0;
-
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
-      height: 10px;
+      top: 0;
+      height: 88px;
+      background-color: $bg-white;
+      border-bottom: 1px solid $bg-gray;
+    }
+
+    &::after {
+      height: 16px;
+      bottom: 0px;
       background: transparent url("../img/wave-tablet.png") left top repeat-x;
     }
+  }
+
+  .page-header__title {
+    width: 550px;
+    margin-top: 112px;
+    margin-bottom: 368px;
+
+    br {
+      display: none;
+    }
+  }
+
+.page-header--internal {
+  .page-header__title {
+    margin-top: 54px;
+    margin-bottom: 80px;
+  }
+}
+
+  .page-header__btn-wrapper {
+    @include container
+    font-size: 0;
   }
 
   .page-header__btn {
@@ -102,25 +150,34 @@
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    padding: 28px 38px 35px;
     font-size: 20px;
     line-height: 30px;
+    transform: translate(0, 5px);
+
+    &:hover {
+      transform: translate(0, 0);
+    }
   }
 }
 
 @media #{$desktop-widths} {
-  .page-header--internal {
-    background: $bg-gray url("../img/wave-desktop.png") bottom left repeat-x;
+  .page-header {
+    &::after {
+      height: 20px;
+      background: transparent url("../img/wave-desktop.png") left top repeat-x;
   }
+}
 
   .page-header__title {
-    font-size: 53px;
-    line-height: 57px;
+    width: 620px;
+    margin-bottom: 354px;
   }
 
-  .page-header__btn-wrapper {
-    &::after {
-      height: 15px;
-      background: transparent url("../img/wave-desktop.png") left top repeat-x;
+  .page-header--internal {
+    .page-header__title {
+      margin-top: 52px;
+      margin-bottom: 101px;
     }
   }
 }

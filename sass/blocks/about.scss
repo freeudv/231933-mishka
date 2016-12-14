@@ -14,8 +14,8 @@
 .about__item {
   position: relative;
   width: 250px;
+  margin-bottom: 31px;
   padding-top: 50px;
-  padding-bottom: 31px;
   font-size: 17px;
   font-weight: 700;
   line-height: 21px;
@@ -45,12 +45,12 @@
 
 @media #{$tablet-widths} {
   .about {
+    padding-top: 32px;
     background: $bg-white url("../img/zigzag-tablet.png") 0 0 repeat-x;
   }
 
   .about__title {
-    font-size: 43px;
-    line-height: 50px;
+    margin-bottom: 51px;
   }
 
   .about__list {
@@ -61,9 +61,16 @@
   .about__item {
     box-sizing: border-box;
     width: 50%;
-    padding-right: 70px;
+    margin-bottom: 57px;
+    padding-top: 50px;
+    padding-right: 35px;
+    padding-left: 5px;
     font-size: 20px;
     line-height: 24px;
+
+    &:before {
+      left: 5px;
+    }
   }
 
   .about__item--feature1 {
@@ -93,10 +100,15 @@
 
 @media #{$desktop-widths} {
   .about {
+    padding-top: 40px;
     background: $bg-white url("../img/zigzag-desktop.png") 0 0 repeat-x;
   }
 
   .about__inner {
     width: 700px;
+  }
+
+  .about__item {
+    padding-right: 50px;
   }
 }
