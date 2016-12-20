@@ -4,11 +4,12 @@
   left: 0;
   width: 260px;
   height: 150px;
+  z-index: 1;
+}
 
-  video {
-    width: 100%;
-    height: 100%;
-  }
+.process-video__image {
+  width: 260px;
+  height: 150px;
 }
 
 .process-video__control {
@@ -38,14 +39,23 @@
 
 @media #{$tablet-widths} {
   .process-video {
-    top: 5px;
+    top: 0;
     width: 668px;
-    height: 456px;
+    height: 455px;
+  }
+
+  .process-video__image {
+    width: 668px;
+    height: 455px;
   }
 }
 
 @media #{$desktop-widths} {
   .process-video {
+    width: 682px;
+  }
+
+  .process-video__image {
     width: 682px;
   }
 }

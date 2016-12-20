@@ -9,6 +9,7 @@
 }
 
 .process__text-wrapper {
+  position: relative;
   padding-top: 23px;
   padding-bottom: 32px;
   border: 1px solid $border-gray;
@@ -17,41 +18,57 @@
     cursor: pointer;
     box-shadow: 0 6px 10px rgba($text-black, 0.1);
 
+    .process__title,
+    .process__text {
+      opacity: 0.6;
+    }
+
     .process__order {
       color: $text-white;
       background-color: $text-dark;
+    }
+
+    .process__icon {
+      fill: $icon-hover;
+      fill-opacity: 1;
     }
   }
 
   &:active {
     box-shadow: 0 3px 5px rgba($text-black, 0.1);
 
+    .process__title,
+    .process__text {
+      opacity: 0.3;
+    }
+
     .process__order {
       color: rgba($text-white, 0.3);
+    }
+
+    .process__icon {
+      fill-opacity: 0.3;
     }
   }
 }
 
 .process__title {
-  position: relative;
   margin-top: 0;
   margin-bottom: 201px;
   padding-left: 91px;
-
   font-size: 17px;
   line-height: 24px;
   color: $text-black;
+}
 
-  &::before {
-    content: "";
+.process__icon {
     position: absolute;
-    top: 10px;
+    top: 28px;
     left: 33px;
-    display: block;
     width: 32px;
-    height: 22px;
-    background:transparent url("../img/icon-video.svg") center no-repeat;
-  }
+    height: 32px;
+    fill: 221f1f;
+    fill-opacity: 0.2;
 }
 
 .process__text {
@@ -86,12 +103,12 @@
     margin-bottom: 32px;
     padding-left: 105px;
     font-size: 20px;
-
-    &::before {
-      top: 0;
-      left: 43px;
-    }
   }
+
+.process__icon {
+    top: 31px;
+    left: 40px;
+}
 
   .process__text {
     margin: 0 40px;
@@ -129,12 +146,12 @@
     margin-bottom: 33px;
     padding-top: 59px;
     padding-left: 0;
-
-    &::before {
-      top: 9px;
-      left: 0;
-    }
   }
+
+.process__icon {
+    top: 40px;
+    left: 79px;
+}
 
   .process__text {
     margin: 0;
