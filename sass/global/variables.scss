@@ -9,9 +9,12 @@ $text-green: #63d1bb;
 
 $border-gray: #ececec;
 $ph-bg: #f9f9f9;
+$icon-hover: #46c1ae;
+
 
 $font-stack: "Open Sans", "Arial", sans-serif;
 
 $tablet-widths: (min-width: 768px);
 $desktop-widths: (min-width: 1150px);
 $mobile-widths-only: (max-width: 767px);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);

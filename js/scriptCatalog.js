@@ -2,7 +2,7 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var modal=document.querySelector (".modal");
 var overlay=document.querySelector (".modal-overlay");
-var orderBtn=document.querySelector (".product-of-week__btn");
+var processBtn=document.querySelector (".process__order");
 var modalBtn=document.querySelector (".modal__btn");
 
 
@@ -18,7 +18,7 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-orderBtn.addEventListener("click", function (event) {
+processBtn.addEventListener("click", function (event) {
   event.preventDefault ();
   modal.classList.add ("modal--show");
   overlay.classList.add ("modal-overlay--show");

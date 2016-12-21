@@ -1,6 +1,7 @@
 .about {
   padding-top: 13px;
-  background: $bg-white url("../img/zigzag-mobile.png") 0 0 repeat-x;
+  background: $bg-white url("../img/bg-zigzag-line.svg") 0 0 repeat-x;
+  background-size: 300px 6px;
 }
 
 .about__inner {
@@ -21,32 +22,18 @@
   line-height: 21px;
   color: $text-black;
 
-  &:before {
-    content: "";
+  svg {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
-    width: 60px;
-    height: 40px;
-    background-color: transparent;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-}
-
-@for $i from 1 through 6 {
-  .about__item--feature#{$i} {
-    &:before {
-      background-image: url("../img/icon-feature-#{$i}.svg");
-    }
+    fill: $text-green;
   }
 }
 
 @media #{$tablet-widths} {
   .about {
     padding-top: 32px;
-    background: $bg-white url("../img/zigzag-tablet.png") 0 0 repeat-x;
+    background-size: 750px 15px;
   }
 
   .about__title {
@@ -68,7 +55,7 @@
     font-size: 20px;
     line-height: 24px;
 
-    &:before {
+    svg {
       left: 5px;
     }
   }
@@ -101,7 +88,7 @@
 @media #{$desktop-widths} {
   .about {
     padding-top: 40px;
-    background: $bg-white url("../img/zigzag-desktop.png") 0 0 repeat-x;
+    background-size: 1150px 23px;
   }
 
   .about__inner {

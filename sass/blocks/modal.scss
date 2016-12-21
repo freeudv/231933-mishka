@@ -1,0 +1,141 @@
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 1045px;
+  left: 0;
+  right: 0;
+  padding-top: 9px;
+  padding-bottom: 45px;
+  border-top: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba($text-black, 0.25);
+  text-align: center;
+}
+
+.modal--catalog {
+  top: 1700px;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal__inner {
+  @include container;
+}
+
+.modal__title {
+  margin: 0 50px 10px;
+  text-transform: uppercase;
+}
+
+.modal__text {
+  margin-bottom: 26px;
+}
+
+.modal__form {
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+.modal__form-list {
+  margin-bottom: 32px;
+  font-size: 0;
+  text-align: center;
+}
+
+.modal__form-item {
+  display: inline-block;
+
+  &:nth-child(2) {
+    margin: 0 7px;
+  }
+
+  label {
+    display: block;
+    width: 78px;
+    height: 48px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 48px;
+    border: 2px solid rgba($text-dark, 0.1);
+    cursor: pointer;
+  }
+
+  label:hover {
+    border: 2px solid rgba($text-dark, 0.3);
+  }
+
+  label:active {
+    border: 2px solid $text-green;
+  }
+
+  input[type="radio"]:checked + label {
+    border: 2px solid $text-green;
+  }
+}
+
+.modal__btn {
+  width: 100%;
+  padding: 18px 0;
+  color: $text-white;
+  background-color: $text-green;
+  border: none;
+
+  &:hover {
+    background-color: $text-green;
+  }
+}
+
+@media #{$tablet-widths} {
+  .modal {
+    box-sizing: border-box;
+    top: 1045px;
+    left: 0;
+    right: 0;
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
+
+  .modal--catalog {
+    top: 1700px;
+  }
+
+  .modal__inner {
+    width: 100%;
+  }
+
+  .modal__title {
+    margin: 0 0 18px;
+    font-size: 30px;
+  }
+
+  .modal__text {
+    margin-bottom: 26px;
+    font-size: 17px;
+  }
+
+  .modal__form-list {
+    margin-bottom: 30px;
+  }
+
+  .modal__form-item {
+    label {
+      width: 108px;
+    }
+  }
+
+  .modal__btn {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media #{$desktop-widths} {
+  .modal--catalog {
+    top: 1100px;
+  }
+}
