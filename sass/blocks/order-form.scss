@@ -15,9 +15,9 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
+    text-transform: uppercase;
     color: $text-green;
     background-color: $bg-white;
-    text-transform: uppercase;
   }
 
   input[type="radio"],
@@ -211,6 +211,20 @@ input[type="tel"] {
   }
 }
 
+.order-form__phone {
+  svg {
+    width: 25px;
+    height: 24px;
+  }
+}
+
+.order-form__email {
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 textarea {
   box-sizing: border-box;
   display: block;
@@ -392,14 +406,18 @@ textarea {
   .order-form__phone,
   .order-form__email {
     input {
-      background-color: $bg-gray;
       padding-right: 60px;
+      background-color: $bg-gray;
     }
 
     svg {
       top: 15px;
       right: 22px;
     }
+  }
+
+  textarea {
+    font-size: 19px;
   }
 
   .order-form__required {

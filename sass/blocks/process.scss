@@ -67,7 +67,7 @@
     left: 33px;
     width: 32px;
     height: 32px;
-    fill: 221f1f;
+    fill: #221f1f;
     fill-opacity: 0.2;
 }
 
@@ -111,8 +111,7 @@
 }
 
   .process__text {
-    margin: 0 40px;
-    margin-bottom: 35px;
+    margin: 0 40px 35px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -133,12 +132,10 @@
   }
 
   .process__text-wrapper {
-    float: right;
     box-sizing: border-box;
+    float: right;
     width: 367px;
-    padding-left: 79px;
-    padding-right: 56px;
-    padding-bottom: 60px;
+    padding: 0 56px 60px 79px;
     border-left: 0;
   }
 
@@ -154,8 +151,7 @@
 }
 
   .process__text {
-    margin: 0;
-    margin-bottom: 46px;
+    margin: 0 0 46px;
   }
 
     .process__order {

@@ -78,9 +78,7 @@
 
   .product-of-week__subtitle {
     width: 80px;
-    margin-bottom: 0;
-    margin-top: 5px;
-    margin-right: 20px;
+    margin: 5px 20px 0 0;
     text-align: center;
   }
 
@@ -133,23 +131,23 @@
   }
 
   .product-of-week__subtitle {
-    margin: 6px 48px 0;
+    margin: 8px 45px 0;
   }
 
   .product-of-week__text {
     margin-bottom: 46px;
   }
   .product-of-week__image {
+    z-index: -1;
     width: 525px;
     height: 636px;
-    z-index: -1;
   }
 
   .product-of-week__text,
   .product-of-week__table,
   .product-of-week__price,
   .product-of-week__btn {
-    margin-left: 180px;
+    margin-left: 175px;
   }
 
   .product-of-week__table {
