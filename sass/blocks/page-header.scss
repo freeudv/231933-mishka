@@ -8,10 +8,10 @@
     &::after {
       content: "";
       position: absolute;
-      z-index: 2;
       left: 0;
       right: 0;
       bottom: -5px;
+      z-index: 2;
       height: 5px;
       background-color: $bg-white;
     }
@@ -132,8 +132,8 @@
     }
 
     &::after {
-      height: 22px;
       bottom: 0px;
+      height: 22px;
       background: transparent url("../img/bg-zigzag-fill.svg") left top repeat-x;
       background-size: 767px 34px;
     }
@@ -156,8 +156,8 @@
 
 .page-header--internal {
   .page-header__title {
-    margin-top: 54px;
-    margin-bottom: 80px;
+    margin-top: 52px;
+    margin-bottom: 82px;
   }
 }
 

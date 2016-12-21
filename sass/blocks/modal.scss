@@ -1,10 +1,10 @@
 .modal {
-  display: none;
   position: absolute;
-  z-index: 20;
   top: 1045px;
   left: 0;
   right: 0;
+  z-index: 20;
+  display: none;
   padding-top: 9px;
   padding-bottom: 45px;
   border-top: 1px solid #c6c6c6;
@@ -90,10 +90,10 @@
 
 @media #{$tablet-widths} {
   .modal {
-    box-sizing: border-box;
     top: 1045px;
     left: 0;
     right: 0;
+    box-sizing: border-box;
     width: 570px;
     margin: 0 auto;
     padding-top: 38px;
@@ -137,5 +137,9 @@
 @media #{$desktop-widths} {
   .modal--catalog {
     top: 1100px;
+  }
+
+  .modal__inner {
+    width: 100%;
   }
 }

@@ -32,7 +32,7 @@
 }
 
 .contacts-table__name {
-  width: 77px;
+  width: 73px;
 }
 
 @media #{$tablet-widths} {
@@ -67,5 +67,9 @@
     tbody {
       display: table-row-group;
     }
+  }
+
+  .contacts-table__name {
+    width: 76px;
   }
 }
