@@ -184,35 +184,30 @@ input[type="tel"] {
   }
 }
 
-.order-form__phone input,
-.order-form__email input{
-  box-sizing: border-box;
-  padding-right: 35px;
-  background-position: right 5px center;
-  background-repeat: no-repeat;
-}
+.order-form__phone,
+.order-form__email {
+  input {
+    box-sizing: border-box;
+    padding-right: 40px;
+    background-position: right 5px center;
+    background-repeat: no-repeat;
 
-.order-form__phone input{
-  background-image: url("../img/icon-phone.svg");
-
-  &:hover {
-    background-image: url("../img/icon-phone-green.svg");
+    &:hover + svg,
+    &:focus + svg {
+      fill: $bg-green;
+      fill-opacity: 1;
+    }
   }
 
-  &:focus {
-    background-image: url("../img/icon-phone-green.svg");
-  }
-}
-
-.order-form__email input{
-  background-image: url("../img/icon-mail.svg");
-
-  &:hover {
-    background-image: url("../img/icon-mail-green.svg");
+  .order-form__group {
+    position: relative;
   }
 
-  &:focus {
-    background-image: url("../img/icon-mail-green.svg");
+  svg {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    fill-opacity: 0.2;
   }
 }
 
@@ -394,10 +389,17 @@ textarea {
     }
   }
 
-  .order-form__phone input,
-  .order-form__email input {
-    background-color: $bg-gray;
-    background-position: right 23px center;
+  .order-form__phone,
+  .order-form__email {
+    input {
+      background-color: $bg-gray;
+      padding-right: 60px;
+    }
+
+    svg {
+      top: 15px;
+      right: 22px;
+    }
   }
 
   .order-form__required {
@@ -444,9 +446,11 @@ textarea {
     width: 263px;
   }
 
-  .order-form__phone input,
-  .order-form__email input {
-    background-position: right 5px center;
+  .order-form__phone,
+  .order-form__email {
+    svg {
+      right: 180px;
+    }
   }
 
   .order-form__name,
