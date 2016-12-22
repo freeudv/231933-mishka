@@ -21,7 +21,8 @@
 }
 
 .modal__inner {
-  @include container;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .modal__title {
@@ -137,9 +138,5 @@
 @media #{$desktop-widths} {
   .modal--catalog {
     top: 1100px;
-  }
-
-  .modal__inner {
-    width: 100%;
   }
 }

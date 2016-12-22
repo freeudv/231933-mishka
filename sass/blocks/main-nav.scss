@@ -128,13 +128,14 @@
 
   svg {
     position: absolute;
-    top: 50%;
+//    top: 50%;
+    top: 30px;
     left: 30px;
     width: 21px;
     height: 18px;
     fill: #221f1f;
     fill-opacity: 0.2;
-    transform: translate(0, -50%);
+//    transform: translate(0, -50%);
   }
 
   &:hover {
@@ -256,6 +257,13 @@
 
     a {
       text-align: right;
+    }
+  }
+
+  .main-nav__item--search,
+  .main-nav__item--card {
+    svg {
+      top: 35px;
     }
   }
 
