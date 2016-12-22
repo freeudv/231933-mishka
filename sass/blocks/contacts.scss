@@ -36,13 +36,6 @@
   }
 }
 
-.contacts__write {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 54px;
-  padding-right: 54px;
-}
-
 @media #{$tablet-widths} {
   .contacts {
     padding-top: 40px;
@@ -72,6 +65,8 @@
   }
 
   .contacts__write {
+    display: inline-block;
+    vertical-align: top;
     padding-left: 39px;
     padding-right: 39px;
   }
@@ -87,17 +82,18 @@
   }
 
   .contacts__inner {
-    padding-left: 221px;
   }
 
   .contacts__title {
+    width: 330px;
     margin-bottom: 47px;
+    padding-left: 171px;
     font-size: 53px;
     line-height: 57px;
 
     &::before {
-      top: -9px;
-      left: -110px;
+      top: -8px;
+      left: 62px;
     }
   }
 
