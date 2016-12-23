@@ -23,8 +23,13 @@
 }
 
 .page-header--internal {
-  background-color: $bg-gray;
   background-image: none;
+  background-color: $bg-gray;
+
+  @media #{$retina} {
+    background-image: none;
+    background-color: $bg-gray;
+  }
 
   .page-header__title {
     margin-top: 71px;
@@ -140,8 +145,13 @@
   }
 
 .page-header--internal {
-  background-color: $bg-gray;
   background-image: none;
+  background-color: $bg-gray;
+
+    @media #{$retina} {
+      background-image: none;
+      background-color: $bg-gray;
+    }
 }
 
   .page-header__title {
@@ -156,8 +166,8 @@
 
 .page-header--internal {
   .page-header__title {
-    margin-top: 52px;
-    margin-bottom: 82px;
+    margin-top: 54px;
+    margin-bottom: 80px;
   }
 }
 
