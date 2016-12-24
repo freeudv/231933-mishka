@@ -1,21 +1,21 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 var modal=document.querySelector (".modal");
 var overlay=document.querySelector (".modal-overlay");
 var orderBtn=document.querySelector (".product-of-week__btn");
 var modalBtn=document.querySelector (".modal__btn");
-var myMap = document.querySelector('.contacts__map');
+var myMap = document.querySelector(".contacts__map");
 
-myMap.classList.remove('contacts__map--nojs');
-navMain.classList.remove('main-nav--nojs');
+myMap.classList.remove("contacts__map--nojs");
+navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
   } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+    navMain.classList.add("main-nav--closed");
+    navMain.classList.remove("main-nav--opened");
   }
 });
 
@@ -49,7 +49,7 @@ window.addEventListener("keydown", function(event) {
 function initMap() {
   var myLatLng = {lat: 59.9387, lng: 30.3231};
 
-  var map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 17,
     center: myLatLng
   });

@@ -22,17 +22,18 @@
   width: 100%;
   height: 460px;
   margin: 0 auto 37px;
+}
 
-    .contacts__map-img {
-      display: none;
-    }
+.contacts__map-img {
+  display: block;
+  width: 100%;
+  height: 460px;
+  display: none;
 }
 
 .contacts__map--nojs {
   .contacts__map-img {
     display: block;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -81,8 +82,11 @@
     background-size: 1150px 23px;
   }
 
-  .contacts__inner {
-  }
+   .contacts__map-inner {
+  position: relative;
+  width: 1050px;
+  margin: 0 auto;
+}
 
   .contacts__title {
     width: 330px;
@@ -99,13 +103,13 @@
 
   .contacts__map {
     position: absolute;
-    top: 94px;
-    right: 46px;
+    top: -407px;
+    right: 0;
     width: 525px;
     margin: 0;
   }
 
   .contacts__write {
-    margin-left: 224px;
+    margin-left: 174px;
   }
 }
