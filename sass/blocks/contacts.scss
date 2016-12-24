@@ -6,8 +6,9 @@
   background-size: 300px 6px;
 }
 
-.contacts__inner {
-  @include container;
+.contacts__text-inner {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -44,6 +45,10 @@
     background-size: 750px 15px;
   }
 
+  .contacts__text-inner {
+    width: 668px;
+  }
+
   .contacts__title {
     position: relative;
     margin-bottom: 45px;
@@ -75,41 +80,50 @@
 
 @media #{$desktop-widths} {
   .contacts {
-    position: relative;
-    padding-top: 120px;
-    padding-bottom: 104px;
+    padding-top: 94px;
+    padding-bottom: 101px;
     text-align: left;
     background-size: 1150px 23px;
   }
 
-  .contacts__map-inner {
-    position: relative;
+  .contacts__inner {
+    @include clearfix;
     width: 1050px;
     margin: 0 auto;
   }
 
+  .contacts__text-inner {
+    float: left;
+    clear: left;
+    box-sizing: border-box;
+    width: 520px;
+    margin: 0;
+    padding-left: 170px;
+  }
+
   .contacts__title {
-    width: 330px;
+    margin-top: 70px;
     margin-bottom: 47px;
-    padding-left: 171px;
     font-size: 53px;
     line-height: 57px;
 
     &::before {
       top: -8px;
-      left: 62px;
+      left: -107px;
     }
   }
 
+  .contacts__map-inner {
+    width: 525px;
+    float: right;
+  }
+
   .contacts__map {
-    position: absolute;
-    top: -407px;
-    right: 0;
     width: 525px;
     margin: 0;
   }
 
   .contacts__write {
-    margin-left: 174px;
+    margin-left: 4px;
   }
 }
