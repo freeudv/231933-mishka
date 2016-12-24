@@ -182,13 +182,26 @@
 @media #{$desktop-widths} {
     .reviews {
     padding-top: 58px;
-    padding-bottom: 162px;
-    background-position: 50px 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+
+    @media #{$retina} {
+      background: none;
+    }
   }
 
   .reviews__inner {
     box-sizing: border-box;
+    padding-top: 58px;
+        padding-bottom: 162px;
     padding-left: 175px;
+    background: url("../img/review@1x.jpg") 0 31px no-repeat;
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -204,11 +217,11 @@
   }
 
   .reviews__btn-wrapper {
-    bottom: -9px;
-    right: 3px;
+    bottom: 153px;
+    right: 5px;
   }
 
   .reviews__write {
-    top: 8px;
+    top: 110px;
   }
 }
